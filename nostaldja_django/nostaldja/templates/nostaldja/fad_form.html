@@ -1,0 +1,11 @@
+{% extends 'nostaldja/base.html' %}
+
+{% block content %}
+    <h1>New Fad</h1>
+    <form method="POST" class="fad-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- form as_p takes field tuple and turns each field into inputs -->
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

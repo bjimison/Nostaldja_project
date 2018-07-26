@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nostaldja</title>
+  <link rel="stylesheet" href="{% static 'css/nostaldja.css' %}">
+</head>
+<body>
+   <h1>Nostaldja</h1>
+      <nav>
+        <a href="/songs">Decades</a>
+        <a href="/">Fads</a>
+      </nav>
+        {% block content %}
+        {% endblock %}
+</body>
+</html>
